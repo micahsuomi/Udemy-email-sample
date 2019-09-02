@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Udemy Email</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+
+        } 
+
+        
+        html {
+        font-size: 65.2%;
+    }
+
+    
+    @media(max-width: 1250px) {
+    html {
+        font-size: 56%;
+    }  
+}
+
+    @media(max-width: 800px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+    @media(max-width: 500px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+      
+
+    :root {
+        --font-size-big: 1.9rem;
+        --font-size-medium: 1.7rem;
+        --font-size-small: 1.2rem;
+        --font-size-smaller: 1.1rem;
+        --color-grey-light: rgb(240, 234, 234);
+        --color-black: rgb(104, 93, 93);
+        --color-black-dark: rgb(66, 60, 73);
+        --color-red: rgb(212, 81, 88);
+        --color-yellow: rgb(235, 223, 59);
+
+    }
+    
+    .container {
+        background-color: #fff;
+        padding: 4rem 30rem;
+    }
+
+    @media(max-width: 1024px) {
+        .container {
+            padding: 1rem;
+        }
+    }
+
+    .body-top-logo {
+        text-align: center;
+    }
+
+    .body-top-logo img {
+        width: 30%;
+    }
+
+    .body-top-bluebanner {
+        background-color: rgb(42, 42, 58);
+        padding: 2.5rem;
+    }
+
+    .body-top-bluebanner h1 {
+        color: #fff;
+    }
+
+    .body-top {
+        background-color: var(--color-grey-light);
+        padding: 3rem;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        align-items: top;
+    }
+
+    .course-img {
+        width: 100%;
+        cursor: pointer;
+
+    }
+
+    .javascript-course-box {
+        background-color: #fff;
+        padding: .6rem 2rem;
+        height: 15.5rem;
+        cursor: pointer;
+
+    }
+
+    .course-list {
+        display: flex; 
+        list-style: none;
+        justify-content: flex-start;
+        margin-top: 1rem;
+    }
+
+    .user {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50px;
+    }
+
+    .course-title {
+        margin-top: 1rem;
+        font-size: var(--font-size-small);
+        color: var(--color-black);
+    }
+
+    .course-teacher {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        color: var(--color-black);
+    }
+
+    .button-container {
+        text-align: center;
+    }
+
+    .btn-course {
+        margin-top: 1rem;
+        background-color: var(--color-red);
+        color: #fff;
+        padding: 1rem;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-course-start {
+        width: 23rem;
+
+    }
+
+    .details {
+        padding: 2rem 0;
+    }
+
+    .details-list {
+        list-style: none;
+        line-height: 1.8;
+        font-size: var(--font-size-smaller);
+        color: var(--color-black);
+        margin-top: 1rem;
+    }
+    
+    .details-list-bold {
+        font-weight: 800;
+    }
+
+    .cards-container {
+        padding: 4rem;
+        background-color: var(--color-grey-light);
+
+    }
+
+    .cards-container h3 {
+        font-size: var(--font-size-medium);
+        color: var(--color-black);
+        margin-bottom: 1rem;
+        text-align: center;
+        cursor: pointer;
+
+    }
+    .cards-wrapper {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+    
+    .card {
+        width: 17rem;
+        cursor: pointer;
+
+    }
+    .card-img {
+        width: 100%;
+    }
+
+    .card-body {
+        background-color: #fff;
+        padding: 1rem;
+    }
+
+    .card-body h4 {
+        margin-top: 1rem;
+        line-height: 1.6;
+        color: var(--color-black);
+        font-size: var(--font-size-small);
+    }
+    .ratings {
+        display: flex;
+        list-style: none;
+        margin-top: 1rem;
+    }
+
+    .card-body .rating {
+        margin-left: .5rem;
+    }
+    .fa-star {
+        color: var(--color-yellow);
+        margin-left: .2rem;
+    }
+
+    .fa-star-half-alt {
+        color: var(--color-yellow);
+        margin-left: .2rem;
+
+    }
+
+    .students {
+        margin-left: .5rem;
+        color: var(--color-black);
+    }
+
+    .btn-take-course {
+        width: 15rem;
+        border-radius: 3px;
+        margin-top: 2rem;
+        padding: .8rem;
+    }
+
+    .body-below-cards {
+        background-color: var(--color-grey-light);
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .body-below-cards .line {
+        background-color: rgb(207, 178, 178);
+        width: 100%;
+        height: 1px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+   
+    .body-below-cards h3 {
+        font-size: var(--font-size-smaller);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .body-below-cards h2 {
+        font-size: var(--font-size-medium);
+        color: rgb(97, 76, 76);
+    }
+
+
+    .btn-get-started {
+        width: 13.7rem;
+        border: none;
+        border-radius: 3px;
+        margin-top: 3.2rem;
+
+    }
+
+    .bottom-list-container {
+    text-align: center;
+    }
+
+    .body-bottom {
+        background-color: var(--color-black-dark);
+        text-align: center;
+        padding: 2.5rem 6.5rem;
+    }
+    .bottom-links-list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+
+    .bottom-links-list-item a {
+        margin: .3rem;
+        color: #fff;
+        font-size: var(--font-size-small);
+        font-weight: 700;
+    }
+
+    .body-bottom-heading {
+        color: #fff;
+        margin-top: .9rem;
+    }
+    
+    .heading-2 {
+        margin-top: 2.3rem;
+    }
+    .bottom-icons {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .bottom-icons-list {
+        margin: 1rem;
+        color: #fff;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="body-container">
+        <div class="body-top-logo">
+            <img src="udemy-logo.png" alt="">
+        </div>
+        <div class="body-top-bluebanner">
+            <h1>Order Confirmation</h1>
+        </div>
+
+        <div class="body-top">
+
+            <div class="images-top">
+                <img src="javascript-course.jpg" class="course-img" alt="">
+            </div>
+            <div class="javascript-course-box">
+                <h4 class="course-title">The Complete JavaScript Course<br>2019: Build Real Projects!</h4>
+                <ul class="course-list">
+                    <li><img src="user.jpg" alt="" class="user"></li>
+                    <li class="course-teacher">Jonas Schmedtmann</li>
+            </ul>
+            <div class="button-container">
+            <button class="btn-course start-course">Start Course</button>
+        </div>
+
+            </div>
+
+            <div class="details">
+                <h2>Purchased By</h2>
+                <ul class="details-list">
+                    <li><span class="details-list-bold">Name:</span> Michele Zucca</li>
+                    <li><span class="details-list-bold">Email:</span> <a href="">michele.zucca81@gmail.com</a></li>
+                    <li><span class="details-list-bold">Purchase Date:</span> 2019-06-13 04:30:12.0</li>
+
+                </ul>
+            </div>
+
+            <div class="details">
+                    <h2>Sold by:</h2>
+                    <ul class="details-list">
+                        <li>Udemy, Inc.</li>
+                        <li>600 Harrison St., 3rd Floor</li>
+                        <li>San Francisco, CA 94107 USA</li>
+    
+                    </ul>
+                </div>
+
+                <div class="details">
+                        <h2>Receipt Details:</h2>
+                        <ul class="details-list">
+                            <li><span class="details-list-bold">Course:</span>The Complete JavaScript Course 2019: Build Real Projects!</li>
+                            <li><span class="details-list-bold">List Price: </span>€199.99</li>
+                            <li><span class="details-list-bold">Discount:</span>€190</li>
+                            <li><span class="details-list-bold">Tax:</span>€0</li>
+                            <li><span class="details-list-bold">Total:</span>€9.99</li>
+
+        
+                        </ul>
+                    </div>
+
+                    <div class="details">
+                            <h2>Need help?
+                                </h2>
+                            <ul class="details-list">
+                                <li>Find it in our, or <a href="#">Help Center</a></li>
+                                <li>contact our<a href="#">support team</a></li>
+            
+                            </ul>
+                        </div>
+
+
+            </div>
+
+            <div class="cards-container">
+                    <h3>Students who enrolled in The Complete JavaScript Course 2019: Build Real Projects! also enrolled in:</h3>
+                    <div class="cards-wrapper">
+                
+                <div class="card">
+                    <div class="card-top">
+                        <img src="html-course.jpg" class="card-img" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4>Build Responsive Real World Websites With HTML5 and CSS3</h4>
+                        <ul class="ratings">
+
+                                <li>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i></li>
+                                        <li class="rating">4.55</li>
+                                        <li class="students">(20,077)</li>
+                                </ul>
+
+                        <button class="btn-course btn-take-course">Take Course</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                        <div class="card-top">
+                            <img src="css-course.jpg" class="card-img" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h4>Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h4>
+                            <ul class="ratings">
+    
+                                    <li>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i></li>
+                                            <li class="rating">4.76</li>
+                                            <li class="students">(13,011)</li>
+                                    </ul>
+    
+                            <button class="btn-course btn-take-course">Take Course</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                            <div class="card-top">
+                                <img src="node-course.jpg" class="card-img" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4>The Complete Node.js Developer Course (3rd Edition)</h4>
+                                <ul class="ratings">
+        
+                                        <li>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i></li>
+                                                <li class="rating">4.66</li>
+                                                <li class="students">(31,366)</li>
+                                        </ul>
+        
+                                <button class="btn-course btn-take-course">Take Course</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                                <div class="card-top">
+                                    <img src="bootcamp-course.jpg" class="card-img" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h4>The Web Developer Bootcamp</h4>
+                                    <ul class="ratings">
+            
+                                            <li>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i></li>
+                                                    <li class="rating">4.66</li>
+                                                    <li class="students">(123,016)</li>
+                                            </ul>
+            
+                                    <button class="btn-course btn-take-course">Take Course</button>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                    <div class="card-top">
+                                        <img src="javascript2-course.jpg" class="card-img" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h4>JavaScript: Understanding the Weird Parts</h4>
+                                        <ul class="ratings">
+                
+                                                <li>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i></li>
+                                                        <li class="rating">4.69</li>
+                                                        <li class="students">(31,755)</li>
+                                                </ul>
+                
+                                        <button class="btn-course btn-take-course">Take Course</button>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                        <div class="card-top">
+                                            <img src="angular-course.jpg" class="card-img" alt="">
+                                        </div>
+                                        <div class="card-body">
+                                            <h4>Angular 8 (Formerly Angular 2) - The Complete Guide</h4>
+                                            <ul class="ratings">
+                    
+                                                    <li>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star-half-alt"></i></li>
+                                                            <li class="rating">4.60</li>
+                                                            <li class="students">(84,094)</li>
+                                                    </ul>
+                    
+                                            <button class="btn-course btn-take-course">Take Course</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="body-below-cards">
+                            <div class="line"></div>
+                                <h3>Want to know when Udemy courses are on sale? Click <a href="#">here</a> to receive our promotional emails.
+                                </h3>
+                                <div class="line">
+                                    </div>
+
+                            </div>
+                            <div class="body-below-cards below-2">
+                                <h2>Take 3000+ of Udemy's top courses<span class="details-list-bold"> for free</span> when your company purchases Udemy for Business</h2>
+                                <button class="btn-course btn-get-started">Get Started</button>
+                            </div>
+                            </div>
+                        
+                
+
+            </div>
+            <div class="body-bottom">
+                    <div class="bottom-links-container">
+                        <ul class="bottom-links-list">
+                            <li class="bottom-links-list-item"><a href="#">Support</a></li>
+                            <li class="bottom-links-list-item"><a href="#">Careers at Udemy</a></li>
+                            <li class="bottom-links-list-item"><a href="#">Get Udemy for Business</a></li>
+                            <li class="bottom-links-list-item"><a href="#">Become an Instructor</a></li>
+
+                        </ul>
+                    </div>
+                    <h3 class="body-bottom-heading">Udemy.com 600 Harrison Street, 3rd Floor San Francisco, CA 94107 USA
+                        </h3>
+
+                        <h3 class="body-bottom-heading heading-2">Download our apps for Offline Coursetaking
+                            </h3>
+                            <div class="bottom-icons-wrapper">
+                                    <ul class="bottom-icons">
+                                        <li class="bottom-icons-list"><i class="fab fa-apple fa-3x"></i></li>
+                                        <li class="bottom-icons-list"><i class="fab fa-android fa-3x"></i></li>
+                                    </ul>
+                                </div>
+                </div>
+              
+
+               
+
+        </div>
+    </div>
+</div>
+
+    </body>
+    </html>
